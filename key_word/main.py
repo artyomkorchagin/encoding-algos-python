@@ -1,11 +1,10 @@
 # This one doesn't work if characters in KEYWORD are not unique
 MESSAGE = 'ПЕРЕСТАНОВКА С КЛЮЧЕВЫМ СЛОВОМ'
-KEYWORD = 'КАПРИЗ'
+KEYWORD = 'СИНДРОМ'
 X = len(KEYWORD)
-Y = 7
+Y = 5
 if __name__ == '__main__':
     matrix = {char: [] for char in KEYWORD}
-    print(matrix)
     encoded = ''
     cursor = 0
 
