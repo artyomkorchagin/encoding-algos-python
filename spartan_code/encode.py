@@ -1,8 +1,10 @@
 message = 'ПЕРЕСТАНОВКАСКЛЮЧЕВЫМСЛОВОМ'
 SHIFT = 6 + 1
-y = SHIFT
-x = len(message)//y + 1
+x = SHIFT
+if len(message) % x != 0: y = (len(message)//x + 1)
+else: y = len(message)//x
 if __name__ == '__main__':
+    print(y,x)
     encoded = ''
     message += (x*y-len(message))*' '
     matrix = {}
